@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-11-03T07:12:46Z",
+  "kpi_label": "% of postings mentioning 'python'",
+  "kpi_value": 0.167,
+  "n_postings_analyzed": 12,
+  "n_matching": 2,
+  "top_skills": [
+    {
+      "skill": "AI",
+      "count": 4
+    },
+    {
+      "skill": "Generative AI",
+      "count": 3
+    },
+    {
+      "skill": "Computer vision",
+      "count": 2
+    },
+    {
+      "skill": "360\u00b0 video",
+      "count": 2
+    },
+    {
+      "skill": "Python",
+      "count": 2
+    },
+    {
+      "skill": "CI/CD",
+      "count": 2
+    },
+    {
+      "skill": "Hyper-realistic 3D backgrounds",
+      "count": 1
+    },
+    {
+      "skill": "Interactive 360\u00b0 spins",
+      "count": 1
+    },
+    {
+      "skill": "Precise cut-outs",
+      "count": 1
+    },
+    {
+      "skill": "Grounded shadows",
+      "count": 1
+    }
+  ],
+  "avg_skills_per_posting": 6.17
+}
