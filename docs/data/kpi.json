@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T07:12:46Z",
+  "generated_at": "2026-11-03T07:39:41Z",
   "kpi_label": "% of postings mentioning 'python'",
   "kpi_value": 0.167,
   "n_postings_analyzed": 12,
@@ -46,5 +46,7 @@
       "count": 1
     }
   ],
-  "avg_skills_per_posting": 6.17
+  "avg_skills_per_posting": 6.17,
+  "second_kpi_label": "Average technical skills per posting",
+  "second_kpi_value": 6.17
 }

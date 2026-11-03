@@ -31,9 +31,24 @@ def compute_kpi(postings, target_skill=TARGET_SKILL):
         "avg_skills_per_posting": round(sum(len(p.get("required_skills", [])) for p in postings) / n, 2) if n else 0.0,
     }
 
+def compute_second_kpi(postings):
+    if not postings:
+        return 0.0
+
+    total = sum(
+        len(set(skill.strip().lower()
+                for skill in p.get("required_skills", [])))
+        for p in postings
+    )
+
+    return round(total / len(postings), 2)
+
+
 def main():
     postings = load_extracted()
     kpi = compute_kpi(postings)
+    kpi["second_kpi_label"] = "Average technical skills per posting"
+    kpi["second_kpi_value"] = compute_second_kpi(postings)
     print(json.dumps(kpi, indent=2))
     with open("docs/data/kpi.json", "w") as f:
         json.dump(kpi, f, indent=2)
